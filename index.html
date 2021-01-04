@@ -1,0 +1,70 @@
+<html>
+<body bgcolor="blue">
+<style>
+h1 {
+text-align:center;
+font-style:arial;
+}
+</style>
+
+<style>
+h1
+{
+animation-duration : 1500ms;
+animation-name : blink;
+animation-iteration-count: infinite;
+animation-direction : alternate;
+}
+
+@keyframes blink
+{
+from
+{
+opacity : 1;
+background-color : none;
+color ;white;
+}
+to
+{
+opacity : 0;
+background-color : none;
+color : white;
+}
+}
+b{
+color:white;}
+h1{color:white;}
+</style>
+<center>
+
+<img src="icct1.jpg" style ="width:300px;height:250px"></center><br><br>
+<form action ="SampleServlet" method="POST"><center>
+ <input type="text" name="userid" size="20" style ="width:250px;height:30px"placeholder ="Last Name"/> <br><br>
+ <input type="password" name="pswrd" size="20" style ="width:250px;height:30px"placeholder ="Student ID"/>
+ <br><br> 
+ <input type="button" onclick="check(form)"value="Login" style ="width:100px;height:30px"/>
+ <input type="reset" value="Cancel" style ="width:100px;height:30px"/>
+ </form>
+ <script language="javascript">
+ function check(form)/*function to check userid & password*/
+ {
+   /* the following code checkes whether  the entered userid and password are matching*/
+ 
+ if (form.userid.value=="Feola" && form.pswrd.value=="UA110064") 
+   {
+      window.open("login1.html")/*open the target page while Id & password matches */
+   }
+ else
+   {
+      alert("Error Password or Username")/*displays error message*/
+   }
+ }
+ </script>
+ 
+ </body><br>
+ <marquee > <h2><b> COMSO 17</b><h2></marquee>
+ 
+ <h1> Mr. Niño Mar Feola,LPT</h1>
+ </html>
+ 
+ 
